@@ -1,11 +1,11 @@
-# GAMENAME
+# Mexican Train
 
-![](images/GAMENAME.jpeg "")
+![Mexican Train](images/mexican-train.jpg "Mexican Train")
 
 ## Site
 
 - [local](http://localhost:8000/)
-- [Published](https://alexhedley.github.io/REPONAME)
+- [Published](https://alexhedley.github.io/mexican-train)
 
 ## Run
 

@@ -1,7 +1,25 @@
 body {
-    background-color: #FCDCB5;
+    background-color: black;
 }
 
 h1 {
-    color: #FCDCB5;
+    color: yellow;
+    font-family: 'Chango'
+}
+
+#results {
+    color: yellow;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.search-bar > input {
+    background-color: black;
+    color: yellow;
+}
+
+.card {
+    background-color: yellow;
 }

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="mexican train">
+    <meta name="keywords" content="mexican, train, dominoes">
     <meta name="author" content="Alex Hedley">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,9 +21,9 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
 
-    <title></title>
+    <title>Mexican Train</title>
   </head>
   <body ng-app="myApp">
     
@@ -32,13 +32,13 @@
 
         <section class="jumbotron title-container text-center">
             <div>
-                <h1></h1>
+                <h1><i class="fas fa-train"></i> Mexican Train</h1>
 
                 <div class="row justify-content-md-center">
                     <div class="col-lg-8">
                         <div class="input-group search-bar">
                             <input type="text" class="form-control" ng-model='searchText' placeholder="Search for a game..." aria-label="Search">
-                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="btn btn-warning"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
         </button>
         <div class="collapse" id="image">
             <div class="row justify-content-md-center">
-                <img src="images/.jpeg" width="500px" alt="Game" />
+                <img src="images/mexican-train.jpg" width="500px" alt="Game" />
             </div>
         </div>
 
@@ -67,7 +67,7 @@
                         <table id="results" class="sortable">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
+                                    <th>📅 Date</th>
                                     <th>Name</th>
                                 </tr>
                             </thead>
@@ -84,7 +84,7 @@
 
                 <br />
 
-                <div class="row justify-content-md-center">
+                <!-- <div class="row justify-content-md-center">
                     <div class="">
 
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -93,7 +93,7 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div ng-repeat="game in games" class="carousel-item" ng-class='{active:$first}'>
-                                    <img src="/PROJECT/{{game.image}}" class="d-block w-100" alt="{{game.name}}">
+                                    <img src="/mexican-train/{{game.image}}" class="d-block w-100" alt="{{game.name}}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>{{game.name}}</h5>
                                         <p>{{game.description}}</p>
@@ -111,7 +111,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
                 <br />
                 
@@ -146,7 +146,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{game.name}}</h5>
                                 <p class="card-text">{{game.description}}</p>
-                                <p class="card-text">{{game.date | date:'d MMM yyyy'}}</p>
+                                <p class="card-text">📅 {{game.date | date:'d MMM yyyy'}}</p>
                                 <div ng-repeat="player in game.players">
                                     <p>{{player.name}} <span ng-if="player.winner"><strong>Winner</strong></span></p>
                                 </div>
